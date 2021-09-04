@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quiz
+{% endblock %}
+
+{% block main %}
+<form action="/quiz" method="get" class="font">
+    <h2>Hi! How’s your day?</h2>
+          <input type="radio" id="sad" name="day" value="sin" >
+          <label for="sad">I’m Sad ☹</label><br>
+          <input type="radio" id="good" name="day" value="health">
+          <label for="good">Pretty good!</label><br>
+          <input type="radio" id="none" name="day" value="sin">
+          <label for="none">None of your business!</label>
+        <br>
+        <br>
+    <h2>How deep is your pocket?</h2>
+          <input type="radio" id="broke" name="pocket" value="1">
+          <label for="broke">I’m broke ☹</label><br>
+          <input type="radio" id="cheap" name="pocket" value="2">
+          <label for="cheap">Caviar is cheap to me</label><br>
+          <input type="radio" id="bigmac" name="pocket" value="1">
+          <label for="bigmac">I can afford a Big Mac.</label>
+        <br>
+        <br>
+    <h2>Good! Next Question… what are you expecting from this meal?</h2>
+          <input type="radio" id="hungry" name="excepting" value="normal">
+          <label for="hungry">To nourish my body</label><br>
+          <input type="radio" id="cultures" name="excepting" value="abnormal">
+          <label for="cultures">To explore some different cultures.</label><br>
+          <input type="radio" id="love" name="excepting" value="normal">
+          <label for="love">To feel love.</label>
+        <br>
+        <br>
+    <h2>Last question… <br>Pineapples on your pizza?</h2>
+          <input type="radio" id="no" name="pizza" value="main">
+          <label for="no">Why not?</label><br>
+          <input type="radio" id="yes" name="pizza" value="light">
+          <label for="yes">I'm too full to have pizza now.</label><br>
+          <input type="radio" id="fk" name="pizza" value="main">
+          <label for="fk">I don’t give a f**k, I’m hungry AF!</label><br><br>
+
+        <div class = "container">
+    <button class="btn btn-primary" type="submit">Submit</button
+</form>
+
+{% endblock %}

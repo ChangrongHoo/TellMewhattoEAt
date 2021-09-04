@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+  <div class = "container">
+    <p class="word">You should eat {{ food }}.</p>
+
+    <form action="/go" method="get">
+      <button class="btn btn-primary">Try again</button>
+    </form>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="/img" method="get">
+        <p>If you still can't decide what to eat, click <button class="btn btn-link">here</button></p>
+    </form>
+ 
+    <br>
+
+{% endblock %}
